@@ -44,7 +44,7 @@ model.compile(optimizer="adam", loss="mse")
 model.fit(x, y, epochs=128, batch_size=16)
 ```
 
-###Prediction
+### Prediction
 After training, the model can predict scores for new inputs. Example input: [Hours: 5, Practice: 1, TeamWork: 0.5, MidTerm: 4, FinalExam: 4.2]
 ```prediction = model.predict(np.array([[5, 1, 0.5, 4, 4.2]]))```
 # Output: Predicted Score
